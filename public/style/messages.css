@@ -35,4 +35,5 @@
 
 .message-content {
   font-size: larger;
+  word-wrap: break-word;
 }
