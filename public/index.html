@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <script src="scripts/index.js"></script>
   </head>
   <body>
     <header>
@@ -39,12 +38,16 @@
           </p>
         </div>
       </div>
-      <div class="input-wrapper">
+      <form id="message-form" class="input-wrapper">
         <div class="input-bar">
-          <input type="text" />
-          <img class="input-button" src="images/send_button.png" />
+          <input id="message-input" type="text" />
+          <button type="submit" class="input-button">
+            <img id="message-send" src="images/send_button.png" />
+          </button>
         </div>
-      </div>
+      </form>
     </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
