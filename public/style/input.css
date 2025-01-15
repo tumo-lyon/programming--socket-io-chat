@@ -1,19 +1,5 @@
-.input-wrapper {
-  /* background-color: blueviolet; */
-  padding: 2%;
-}
-
 .input-bar {
   display: flex;
-  gap: 5px;
-}
-
-.input-bar :first-child {
-  border-radius: 8px 0 0 8px;
-}
-
-.input-bar :last-child {
-  border-radius: 0 8px 8px 0;
 }
 
 .input-button {
@@ -58,3 +44,23 @@
   transition: 100ms ease-in;
   outline: none;
 }
+
+@media screen and (min-width: 512px) {
+  .input-bar :first-child {
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .input-bar :last-child {
+    border-radius: 0 8px 8px 0;
+  }
+
+  .input-wrapper {
+    /* background-color: blueviolet; */
+    padding: 2%;
+  }
+
+  .input-bar {
+    gap: 5px;
+  }
+}
+
